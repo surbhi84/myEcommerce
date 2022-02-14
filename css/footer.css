@@ -1,0 +1,4 @@
+.copyright-text {
+  padding: 0 var(--spacing-xs);
+  justify-content: space-between;
+}

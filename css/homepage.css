@@ -1,0 +1,61 @@
+.home-head {
+  background: url(/media/images/home.jpg);
+  background-size: cover;
+  height: 80vh;
+}
+
+.home-grid-block {
+  padding: var(--spacing-md);
+  gap: var(--spacing-xs);
+}
+
+.category-card {
+  width: 15%;
+  overflow: hidden;
+}
+
+.inner-category-card:hover {
+  transform: scale(1.05);
+  transition: transform 0.5s ease-in-out;
+}
+
+.landscape-overcard {
+  height: 30%;
+  width: 60%;
+  margin-left: 5%;
+}
+
+.overcard {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 0 var(--spacing-xl);
+  align-self: center;
+  position: absolute;
+  height: 35%;
+  width: 30%;
+  left: 55%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: white;
+  box-shadow: var(--shadow-subtle);
+  border-radius: 1px;
+}
+
+.opaque {
+  opacity: 0.9;
+}
+
+.category-overlay-card {
+  width: 32%;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+}
+
+.text-overlay-card {
+  position: absolute;
+}
+
+.inner-category-overlay:hover {
+  transform: scale(1.05);
+  transition: transform 0.5s ease-in-out;
+}

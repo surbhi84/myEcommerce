@@ -5,140 +5,191 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Surbhi Kukreti" />
-    <meta name="description" content="haLLoCart" />
+    <meta name="description" content="HalloCart Home page" />
 
     <link rel="stylesheet" href="/css/common.css" />
+    <link rel="stylesheet" href="/css/homepage.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
 
     <link rel="stylesheet" href="http://127.0.0.1:5501/halloUi-share.css" />
     <title>haLLoCart</title>
   </head>
   <body>
-    <header class="nav-head color-bp">
-      <h2 class="logo">Hallo!Cart</h2>
-      <ul class="nav-links">
-        <li class="search">
-          <input type="text" placeholder="Search.." class="search-bar" />
-          <button class="search-btn">
-            <img
-              src="media/icons/search.svg"
-              alt="search icon"
-              class="search-icon"
-            />
-          </button>
-        </li>
+    <header class="home-head">
+      <div class="nav-head">
+        <h2 class="logo">Hallo!Decor</h2>
+        <ul class="nav-links">
+          <li class="search">
+            <input type="text" placeholder="Search.." class="search-bar" />
+            <button class="search-btn">
+              <img
+                src="media/icons/search.svg"
+                alt="search icon"
+                class="search-icon"
+              />
+            </button>
+          </li>
 
-        <li>
-          <a class="nav-link" href="#"
-            ><img
-              src="media/icons/profile.svg"
-              alt="Profile icon"
-              class="nav-icon"
-            />Profile
-          </a>
-        </li>
-        <li>
-          <a class="nav-link" href="#">
-            <img
-              src="media/icons/heartFilled.svg"
-              alt="heart icon"
-              class="nav-icon"
-            />
-            Wishlist
-          </a>
-        </li>
-        <li>
-          <a class="nav-link" href="#"
-            ><img src="media/icons/cart.svg" alt="cart icon" class="nav-icon" />
-            Cart</a
-          >
-        </li>
-      </ul>
+          <li>
+            <a class="nav-link" href="#"
+              ><img
+                src="media/icons/profile.svg"
+                alt="Profile icon"
+                class="nav-icon"
+              />Profile
+            </a>
+          </li>
+          <li>
+            <a class="nav-link" href="#">
+              <img
+                src="media/icons/heartFilled.svg"
+                alt="heart icon"
+                class="nav-icon"
+              />
+              Wishlist
+            </a>
+          </li>
+          <li>
+            <a class="nav-link" href="#"
+              ><img
+                src="media/icons/cart.svg"
+                alt="cart icon"
+                class="nav-icon"
+              />
+              Cart</a
+            >
+          </li>
+        </ul>
+      </div>
     </header>
+    <main class="flex-col">
+      <div class="home-grid-block flex-row-wrap flex-center">
+        <!-- card 1 -->
+        <div class="category-card">
+          <div class="inner-category-card">
+            <img
+              src="/media/images/artanddecor.jpg"
+              alt=""
+              class="responsive-img"
+            />
+            <p class="mg-xs text-center">Art & Decor</p>
+          </div>
+        </div>
+        <!-- card 2 -->
+        <div class="category-card">
+          <div class="inner-category-card">
+            <img
+              src="/media/images/artanddecor.jpg"
+              alt=""
+              class="responsive-img"
+            />
+            <p class="mg-xs text-center">Lamps & lighting</p>
+          </div>
+        </div>
+        <!-- card 3 -->
+        <div class="category-card">
+          <div class="inner-category-card">
+            <img
+              src="/media/images/artanddecor.jpg"
+              alt=""
+              class="responsive-img"
+            />
+            <p class="mg-xs text-center">Kitchen & Dining</p>
+          </div>
+        </div>
+        <!-- card 4 -->
+        <div class="category-card">
+          <div class="inner-category-card">
+            <img
+              src="/media/images/artanddecor.jpg"
+              alt=""
+              class="responsive-img"
+            />
+            <p class="mg-xs text-center">Bath</p>
+          </div>
+        </div>
+        <!-- card 5 -->
+        <div class="category-card">
+          <div class="inner-category-card">
+            <img
+              src="/media/images/artanddecor.jpg"
+              alt=""
+              class="responsive-img"
+            />
+            <p class="mg-xs text-center">Bed Linen</p>
+          </div>
+        </div>
 
-    <div class="flex-row-wrap gap-md pd-s flex-center">
-      <div class="card">
-        <span class="card-badge">#1 Bestseller</span>
-        <img src="/media/images/mugs.webp" alt="mug set" class="img-size" />
-        <div class="pad-topleft">
-          <h4 class="marg-un">GOODHOMES</h4>
-          <span>4-Pcs Printed Bone China Cups Set</span>
-        </div>
-        <div class="pad-topleft">
-          <strong> Rs. 749 </strong> <s>999</s> <span>25% OFF</span>
-        </div>
-        <div class="btns">
-          <button class="btn"><img src="/media/icons/redHeart.svg" /></button>
-          <button class="btn"><img src="/media/icons/bluecart.svg" /></button>
+        <!-- card 6 -->
+        <div class="category-card">
+          <div class="inner-category-card">
+            <img
+              src="/media/images/artanddecor.jpg"
+              alt=""
+              class="responsive-img"
+            />
+            <p class="mg-xs text-center">Furnishings</p>
+          </div>
         </div>
       </div>
 
-      <!-- 2nd card -->
-      <div class="card">
-        <span class="card-badge">#1 Bestseller</span>
-        <img src="/media/images/mugs.webp" alt="mug set" class="img-size" />
-        <div class="pad-topleft">
-          <h4 class="marg-un">GOODHOMES</h4>
-          <span>4-Pcs Printed Bone China Cups Set</span>
-        </div>
-        <div class="pad-topleft">
-          <strong> Rs. 749 </strong> <s>999</s> <span>25% OFF</span>
-        </div>
-        <div class="btns">
-          <button class="btn"><img src="/media/icons/redHeart.svg" /></button>
-          <button class="btn"><img src="/media/icons/bluecart.svg" /></button>
+      <div class="home-grid-block">
+        <div class="flex-row landscape-overcard">
+          <img src="/media/images/sofa.jpg" alt="" class="responsive-img" />
+
+          <div class="overcard med-text">
+            Welcome to your one stop shop for elegant and chic Decor.
+          </div>
+          <!-- <div class="black-block">.</div> -->
         </div>
       </div>
 
-      <!-- 3rd cARD -->
-      <div class="card">
-        <span class="card-badge">#1 Bestseller</span>
-        <img src="/media/images/mugs.webp" alt="mug set" class="img-size" />
-        <div class="pad-topleft">
-          <h4 class="marg-un">GOODHOMES</h4>
-          <span>4-Pcs Printed Bone China Cups Set</span>
+      <div class="home-grid-block flex-row">
+        <!-- big card 1 -->
+        <div class="category-overlay-card">
+          <div class="inner-category-overlay flex-center">
+            <img
+              src="/media/images/whitemirror1.jpg"
+              alt=""
+              class="responsive-img opaque"
+            />
+            <div class="med-text text-overlay-card">Bestsellers</div>
+          </div>
         </div>
-        <div class="pad-topleft">
-          <strong> Rs. 749 </strong> <s>999</s> <span>25% OFF</span>
+        <!-- big card 2 -->
+        <div class="category-overlay-card">
+          <div class="inner-category-overlay flex-center">
+            <img
+              src="/media/images/basket1.jpg"
+              alt=""
+              class="responsive-img opaque"
+            />
+            <div class="med-text text-overlay-card">Handcrafted</div>
+          </div>
         </div>
-        <div class="btns">
-          <button class="btn"><img src="/media/icons/redHeart.svg" /></button>
-          <button class="btn"><img src="/media/icons/bluecart.svg" /></button>
+        <!-- big card 3 -->
+        <div class="category-overlay-card">
+          <div class="inner-category-overlay flex-center">
+            <img
+              src="/media/images/chairtable1.jpg"
+              alt=""
+              class="responsive-img opaque"
+            />
+            <div class="med-text text-overlay-card">Trendsetters</div>
+          </div>
         </div>
       </div>
+    </main>
+    <footer>
+      Keep in touch
+      <div></div>
 
-      <!-- 4rth card -->
-      <div class="card">
-        <span class="card-badge">#1 Bestseller</span>
-        <img src="/media/images/mugs.webp" alt="mug set" class="img-size" />
-        <div class="pad-topleft">
-          <h4 class="marg-un">GOODHOMES</h4>
-          <span>4-Pcs Printed Bone China Cups Set</span>
-        </div>
-        <div class="pad-topleft">
-          <strong> Rs. 749 </strong> <s>999</s> <span>25% OFF</span>
-        </div>
-        <div class="btns">
-          <button class="btn"><img src="/media/icons/redHeart.svg" /></button>
-          <button class="btn"><img src="/media/icons/bluecart.svg" /></button>
-        </div>
+      <div class="copyright-text flex-row">
+        <p class="marg-un">In case of any concern,<a href="">Contact Us</a></p>
+        <p class="marg-un">
+          © 2022 HalloDecor by Surbhi Kukreti. All rights reserved.
+        </p>
       </div>
-
-      <!-- 5th card -->
-      <div class="card">
-        <span class="card-badge">#1 Bestseller</span>
-        <img src="/media/images/mugs.webp" alt="mug set" class="img-size" />
-        <div class="pad-topleft">
-          <h4 class="marg-un">GOODHOMES</h4>
-          <span>4-Pcs Printed Bone China Cups Set</span>
-        </div>
-        <div class="pad-topleft">
-          <strong> Rs. 749 </strong> <s>999</s> <span>25% OFF</span>
-        </div>
-        <div class="btns">
-          <button class="btn"><img src="/media/icons/redHeart.svg" /></button>
-          <button class="btn"><img src="/media/icons/bluecart.svg" /></button>
-        </div>
-      </div>
-    </div>
+    </footer>
   </body>
 </html>
