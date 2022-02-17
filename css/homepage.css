@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Gideon+Roman&family=Libre+Baskerville&family=Nunito:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Gideon+Roman&family=Nunito:wght@200&display=swap");
 
 .display-block {
   padding: var(--spacing-md);
@@ -17,12 +17,6 @@
   color: black;
 }
 
-/* inner of the card to implement the hover functionality */
-.inner-category-card:hover {
-  transform: scale(1.05);
-  transition: transform 0.5s ease-in-out;
-}
-
 /* div that contains landscape image with overcard */
 .landscape-overcard {
   height: 30%;
@@ -30,13 +24,13 @@
   margin-left: 5%;
 }
 
-.overcard {
+.overlay-solid-card {
   display: flex;
   align-items: center;
   text-align: center;
   align-self: flex-end;
   padding: 0 var(--spacing-xl);
-  margin-bottom: 3.4rem;
+  margin-bottom: 4%;
   position: absolute;
   height: 35%;
   width: 30%;
@@ -68,10 +62,4 @@
   cursor: pointer;
   text-decoration: none;
   color: black;
-}
-
-/* inner div for design implementation */
-.inner-category-overlay:hover {
-  transform: scale(1.05);
-  transition: transform 0.5s ease-in-out;
 }

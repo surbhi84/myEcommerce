@@ -8,7 +8,6 @@
   text-decoration: none;
   color: black;
   font-size: var(--fs-m);
-  font-family: "Gideon Roman", cursive;
   font-family: "Dancing Script", cursive;
   border: 4px var(--primary-color);
   border-style: double;
@@ -17,10 +16,9 @@
 
 .nav-head {
   position: absolute;
-  min-width: 100%;
+  width: 100%;
   top: 0;
   background-color: var(--primary-color-bg);
-  font-family: "Nunito", sans-serif;
 }
 
 .nav-links {
