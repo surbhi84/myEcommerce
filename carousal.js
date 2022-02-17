@@ -1,9 +1,3 @@
-let r1 = document.getElementById("radio1");
-let r2 = document.getElementById("radio2");
-let r3 = document.getElementById("radio3");
-let r4 = document.getElementById("radio4");
-
-console.log("hey");
 let label = document.querySelectorAll(".manual-btn");
 
 // function clearManualBtnStyle() {

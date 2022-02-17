@@ -8,11 +8,11 @@
     <meta name="description" content="HalloCart Home page" />
     <link rel="stylesheet" href="/css/common.css" />
 
-    <!-- <link rel="stylesheet" href="http://127.0.0.1:5501/halloUi-share.css" /> -->
-    <link
+    <link rel="stylesheet" href="http://127.0.0.1:5501/halloUi-share.css" />
+    <!-- <link
       rel="stylesheet"
       href="https://halloui.netlify.app/halloUi-share.css"
-    />
+    /> -->
 
     <script src="/carousal.js" defer></script>
     <script
@@ -35,17 +35,24 @@
           <input type="radio" name="radio-btn" id="radio4" />
 
           <div class="slide first">
-            <img src="/media/images/living.webp" alt="" class="top-fit" />
+            <img
+              src="/media/images/living.webp"
+              alt="living room"
+              class="top-fit"
+            />
           </div>
 
           <div class="slide">
-            <img src="/media/images/wallplanters.webp" alt="" />
+            <img
+              src="/media/images/wallplanters.webp"
+              alt="planters on a wall"
+            />
           </div>
 
           <div class="slide">
             <img
               src="/media/images/portraitwall.webp"
-              alt=""
+              alt="three portraits on a wall"
               class="bottom-fit"
             />
           </div>
@@ -53,21 +60,12 @@
           <div class="slide">
             <img
               src="/media/images/yellowsofa1.webp"
-              alt=""
+              alt="living room sofa"
               class="bottom-fit"
             />
           </div>
 
           <div class="manual-navigation">
-            <!-- <input type="radio" name="radio-btn" id="radio1" />
-            <label for="radio1" class="manual-btn"></label>
-            <input type="radio" name="radio-btn" id="radio2" />
-            <label for="radio2" class="manual-btn"></label>
-            <input type="radio" name="radio-btn" id="radio3" />
-            <label for="radio3" class="manual-btn"></label>
-            <input type="radio" name="radio-btn" id="radio4" />
-            <label for="radio4" class="manual-btn"></label> -->
-
             <label for="radio1" class="manual-btn"></label>
             <label for="radio2" class="manual-btn"></label>
             <label for="radio3" class="manual-btn"></label>
@@ -79,8 +77,10 @@
       <!-- end of carousel -->
 
       <!-- start of nav-head -->
-      <div class="nav-head">
-        <h2 class="logo">Hallo!Decor</h2>
+      <nav class="nav-head">
+        <a class="logo" href="/index.html">
+          <h2 class="mg-xs">Hallo!Decor</h2>
+        </a>
         <!-- start of nav-links -->
         <ul class="nav-links">
           <li class="search search-box">
@@ -125,7 +125,7 @@
           </li>
         </ul>
         <!-- end of nav-links -->
-      </div>
+      </nav>
       <!-- end of nav-head -->
     </header>
 
@@ -157,7 +157,7 @@
               alt=""
               class="responsive-img opaque"
             />
-            <div class="text-overlay-card">Bestsellers</div>
+            <a class="text-overlay-card" href="./index.html"> Bestsellers </a>
           </div>
         </div>
         <!-- big card 2 -->
@@ -168,7 +168,7 @@
               alt=""
               class="responsive-img opaque"
             />
-            <div class="text-overlay-card">Handcrafted</div>
+            <a class="text-overlay-card" href="./index.html"> Handcrafted </a>
           </div>
         </div>
         <!-- big card 3 -->
@@ -179,7 +179,7 @@
               alt=""
               class="responsive-img opaque"
             />
-            <div class="text-overlay-card">Trendsetters</div>
+            <a class="text-overlay-card" href="./index.html"> Trendsetters </a>
           </div>
         </div>
       </div>
@@ -189,58 +189,78 @@
       <div class="display-block flex-row-wrap flex-center">
         <!-- card 1 -->
         <div class="category-card">
-          <div class="inner-category-card">
-            <img
-              src="/media/images/artanddecor.jpg"
-              alt=""
-              class="responsive-img"
-            />
-            <p class="mg-xs text-center">Art & Decor</p>
-          </div>
+          <a class="text-dec-none" href="/index.html">
+            <div class="inner-category-card">
+              <img
+                src="/media/images/artanddecor.jpg"
+                alt=""
+                class="responsive-img"
+              />
+              <p class="mg-xs text-center">Art & Decor</p>
+            </div>
+          </a>
         </div>
         <!-- card 2 -->
         <div class="category-card">
-          <div class="inner-category-card">
-            <img
-              src="/media/images/lampbed.jpg"
-              alt=""
-              class="responsive-img"
-            />
-            <p class="mg-xs text-center">Lamps & lighting</p>
-          </div>
+          <a class="text-dec-none" href="/index.html">
+            <div class="inner-category-card">
+              <img
+                src="/media/images/lampbed.jpg"
+                alt=""
+                class="responsive-img"
+              />
+              <p class="mg-xs text-center">Lamps & lighting</p>
+            </div>
+          </a>
         </div>
         <!-- card 3 -->
         <div class="category-card">
-          <div class="inner-category-card">
-            <img src="/media/images/plates.jpg" alt="" class="responsive-img" />
-            <p class="mg-xs text-center">Kitchen & Dining</p>
-          </div>
+          <a class="text-dec-none" href="/index.html">
+            <div class="inner-category-card">
+              <img
+                src="/media/images/plates.jpg"
+                alt=""
+                class="responsive-img"
+              />
+              <p class="mg-xs text-center">Kitchen & Dining</p>
+            </div>
+          </a>
         </div>
         <!-- card 4 -->
         <div class="category-card">
-          <div class="inner-category-card">
-            <img
-              src="/media/images/stackedSoap (1).jpg"
-              alt=""
-              class="responsive-img"
-            />
-            <p class="mg-xs text-center">Bath</p>
-          </div>
+          <a class="text-dec-none" href="/index.html">
+            <div class="inner-category-card">
+              <img
+                src="/media/images/stackedSoap (1).jpg"
+                alt=""
+                class="responsive-img"
+              />
+              <p class="mg-xs text-center">Bath</p>
+            </div>
+          </a>
         </div>
         <!-- card 5 -->
         <div class="category-card">
-          <div class="inner-category-card">
-            <img src="/media/images/bed1.jpg" alt="" class="responsive-img" />
-            <p class="mg-xs text-center">Bed Linen</p>
-          </div>
+          <a class="text-dec-none" href="/index.html">
+            <div class="inner-category-card">
+              <img src="/media/images/bed1.jpg" alt="" class="responsive-img" />
+              <p class="mg-xs text-center">Bed Linen</p>
+            </div>
+          </a>
         </div>
 
         <!-- card 6 -->
         <div class="category-card">
-          <div class="inner-category-card">
-            <img src="/media/images/decor.jpg" alt="" class="responsive-img" />
-            <p class="mg-xs text-center">Furnishings</p>
-          </div>
+          <a class="text-dec-none" href="/index.html">
+            <div class="inner-category-card">
+              <img
+                src="/media/images/decor.jpg"
+                alt=""
+                class="responsive-img"
+              />
+              <p class="mg-xs text-center">Furnishings</p>
+            </div>
+          </a>
         </div>
       </div>
       <!-- end of block-3 -->
@@ -254,18 +274,18 @@
         <div class="display-block">
           Keep in touch
           <ul class="footer-list">
-            <li class="footer-link">
+            <li>
               <a href="" class="footer-icon">
                 <i class="fab fa-linkedin-in"></i
               ></a>
             </li>
-            <li class="footer-link">
+            <li>
               <a href="" class="footer-icon"><i class="fab fa-github"></i></a>
             </li>
-            <li class="footer-link">
+            <li>
               <a href="" class="footer-icon"><i class="fab fa-twitter"></i></a>
             </li>
-            <li class="footer-link">
+            <li>
               <a href="" class="footer-icon">
                 <i class="fab fa-medium-m"></i
               ></a>

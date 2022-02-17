@@ -12,6 +12,11 @@
   font-family: "Gideon Roman", cursive;
 }
 
+.inner-category-card {
+  cursor: pointer;
+  color: black;
+}
+
 /* inner of the card to implement the hover functionality */
 .inner-category-card:hover {
   transform: scale(1.05);
@@ -36,7 +41,6 @@
   height: 35%;
   width: 30%;
   left: 58%;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-color: white;
   box-shadow: var(--shadow-subtle);
   border-radius: 1px;
@@ -61,6 +65,9 @@
 .text-overlay-card {
   font-size: var(--fs-m);
   position: absolute;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
 }
 
 /* inner div for design implementation */

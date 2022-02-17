@@ -1,13 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Gideon+Roman&family=Libre+Baskerville&family=Nunito:wght@200&display=swap");
+
 * {
   box-sizing: border-box;
 }
 
-body {
-  max-width: 100vw;
-}
-
 .logo {
-  font-family: "Libre Baskerville", serif;
+  text-decoration: none;
+  color: black;
+  font-size: var(--fs-m);
+  font-family: "Gideon Roman", cursive;
+  font-family: "Dancing Script", cursive;
+  border: 4px var(--primary-color);
+  border-style: double;
+  background-color: var(--primary-color-bg);
 }
 
 .nav-head {
@@ -15,7 +20,6 @@ body {
   min-width: 100%;
   top: 0;
   background-color: var(--primary-color-bg);
-  padding: var(--spacing-xs);
   font-family: "Nunito", sans-serif;
 }
 
