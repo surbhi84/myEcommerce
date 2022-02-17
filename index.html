@@ -6,20 +6,84 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Surbhi Kukreti" />
     <meta name="description" content="HalloCart Home page" />
-
     <link rel="stylesheet" href="/css/common.css" />
-    <link rel="stylesheet" href="/css/homepage.css" />
-    <link rel="stylesheet" href="/css/footer.css" />
 
     <link rel="stylesheet" href="http://127.0.0.1:5501/halloUi-share.css" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://halloui.netlify.app/halloUi-share.css"
+    /> -->
+
+    <script src="/carousal.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/c780d21494.js"
+      crossorigin="anonymous"
+    ></script>
     <title>haLLoCart</title>
   </head>
   <body>
     <header class="home-head">
+      <!-- Carousel -->
+
+      <section class="carousel">
+        <!-- start of slides -->
+
+        <div class="slides">
+          <input type="radio" name="radio-btn" id="radio1" />
+          <input type="radio" name="radio-btn" id="radio2" />
+          <input type="radio" name="radio-btn" id="radio3" />
+          <input type="radio" name="radio-btn" id="radio4" />
+
+          <div class="slide first">
+            <img src="/media/images/living.webp" alt="" class="top-fit" />
+          </div>
+
+          <div class="slide">
+            <img src="/media/images/wallplanters.webp" alt="" />
+          </div>
+
+          <div class="slide">
+            <img
+              src="/media/images/portraitwall.webp"
+              alt=""
+              class="bottom-fit"
+            />
+          </div>
+
+          <div class="slide">
+            <img
+              src="/media/images/yellowsofa1.webp"
+              alt=""
+              class="bottom-fit"
+            />
+          </div>
+
+          <div class="manual-navigation">
+            <!-- <input type="radio" name="radio-btn" id="radio1" />
+            <label for="radio1" class="manual-btn"></label>
+            <input type="radio" name="radio-btn" id="radio2" />
+            <label for="radio2" class="manual-btn"></label>
+            <input type="radio" name="radio-btn" id="radio3" />
+            <label for="radio3" class="manual-btn"></label>
+            <input type="radio" name="radio-btn" id="radio4" />
+            <label for="radio4" class="manual-btn"></label> -->
+
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+          </div>
+        </div>
+        <!-- end of slides -->
+      </section>
+      <!-- end of carousel -->
+
+      <!-- start of nav-head -->
       <div class="nav-head">
         <h2 class="logo">Hallo!Decor</h2>
+        <!-- start of nav-links -->
         <ul class="nav-links">
-          <li class="search">
+          <li class="search search-box">
             <input type="text" placeholder="Search.." class="search-bar" />
             <button class="search-btn">
               <img
@@ -60,10 +124,69 @@
             >
           </li>
         </ul>
+        <!-- end of nav-links -->
       </div>
+      <!-- end of nav-head -->
     </header>
+
+    <!-- start of main content -->
     <main class="flex-col">
-      <div class="home-grid-block flex-row-wrap flex-center">
+      <!-- block-1 -->
+      <div class="display-block">
+        <div class="flex-row landscape-overcard">
+          <img
+            src="/media/images/sofaBeige.jpg"
+            alt=""
+            class="responsive-img"
+          />
+          <!-- over-card -->
+          <div class="overcard med-text">
+            Welcome to your one stop shop for elegant and chic Decor.
+          </div>
+        </div>
+      </div>
+      <!-- end of block-1 -->
+
+      <!-- block-2 -->
+      <div class="display-block flex-row">
+        <!-- big card 1 -->
+        <div class="category-overlay-card">
+          <div class="inner-category-overlay flex-center">
+            <img
+              src="/media/images/whitemirror1.jpg"
+              alt=""
+              class="responsive-img opaque"
+            />
+            <div class="text-overlay-card">Bestsellers</div>
+          </div>
+        </div>
+        <!-- big card 2 -->
+        <div class="category-overlay-card">
+          <div class="inner-category-overlay flex-center">
+            <img
+              src="/media/images/basket1.jpg"
+              alt=""
+              class="responsive-img opaque"
+            />
+            <div class="text-overlay-card">Handcrafted</div>
+          </div>
+        </div>
+        <!-- big card 3 -->
+        <div class="category-overlay-card">
+          <div class="inner-category-overlay flex-center">
+            <img
+              src="/media/images/chairtable1.jpg"
+              alt=""
+              class="responsive-img opaque"
+            />
+            <div class="text-overlay-card">Trendsetters</div>
+          </div>
+        </div>
+      </div>
+      <!-- end of block-2 -->
+
+      <!-- block-3 -->
+      <div class="display-block flex-row-wrap flex-center">
         <!-- card 1 -->
         <div class="category-card">
           <div class="inner-category-card">
@@ -79,7 +202,7 @@
         <div class="category-card">
           <div class="inner-category-card">
             <img
-              src="/media/images/artanddecor.jpg"
+              src="/media/images/lampbed.jpg"
               alt=""
               class="responsive-img"
             />
@@ -89,11 +212,7 @@
         <!-- card 3 -->
         <div class="category-card">
           <div class="inner-category-card">
-            <img
-              src="/media/images/artanddecor.jpg"
-              alt=""
-              class="responsive-img"
-            />
+            <img src="/media/images/plates.jpg" alt="" class="responsive-img" />
             <p class="mg-xs text-center">Kitchen & Dining</p>
           </div>
         </div>
@@ -101,7 +220,7 @@
         <div class="category-card">
           <div class="inner-category-card">
             <img
-              src="/media/images/artanddecor.jpg"
+              src="/media/images/stackedSoap (1).jpg"
               alt=""
               class="responsive-img"
             />
@@ -111,11 +230,7 @@
         <!-- card 5 -->
         <div class="category-card">
           <div class="inner-category-card">
-            <img
-              src="/media/images/artanddecor.jpg"
-              alt=""
-              class="responsive-img"
-            />
+            <img src="/media/images/bed1.jpg" alt="" class="responsive-img" />
             <p class="mg-xs text-center">Bed Linen</p>
           </div>
         </div>
@@ -123,69 +238,80 @@
         <!-- card 6 -->
         <div class="category-card">
           <div class="inner-category-card">
-            <img
-              src="/media/images/artanddecor.jpg"
-              alt=""
-              class="responsive-img"
-            />
+            <img src="/media/images/decor.jpg" alt="" class="responsive-img" />
             <p class="mg-xs text-center">Furnishings</p>
           </div>
         </div>
       </div>
-
-      <div class="home-grid-block">
-        <div class="flex-row landscape-overcard">
-          <img src="/media/images/sofa.jpg" alt="" class="responsive-img" />
-
-          <div class="overcard med-text">
-            Welcome to your one stop shop for elegant and chic Decor.
-          </div>
-          <!-- <div class="black-block">.</div> -->
-        </div>
-      </div>
-
-      <div class="home-grid-block flex-row">
-        <!-- big card 1 -->
-        <div class="category-overlay-card">
-          <div class="inner-category-overlay flex-center">
-            <img
-              src="/media/images/whitemirror1.jpg"
-              alt=""
-              class="responsive-img opaque"
-            />
-            <div class="med-text text-overlay-card">Bestsellers</div>
-          </div>
-        </div>
-        <!-- big card 2 -->
-        <div class="category-overlay-card">
-          <div class="inner-category-overlay flex-center">
-            <img
-              src="/media/images/basket1.jpg"
-              alt=""
-              class="responsive-img opaque"
-            />
-            <div class="med-text text-overlay-card">Handcrafted</div>
-          </div>
-        </div>
-        <!-- big card 3 -->
-        <div class="category-overlay-card">
-          <div class="inner-category-overlay flex-center">
-            <img
-              src="/media/images/chairtable1.jpg"
-              alt=""
-              class="responsive-img opaque"
-            />
-            <div class="med-text text-overlay-card">Trendsetters</div>
-          </div>
-        </div>
-      </div>
+      <!-- end of block-3 -->
     </main>
+    <!-- end of main-content -->
+
+    <!-- start of footer -->
     <footer>
-      Keep in touch
-      <div></div>
+      <div class="footer-grid">
+        <!-- icon-links -->
+        <div class="display-block">
+          Keep in touch
+          <ul class="footer-list">
+            <li class="footer-link">
+              <a href="" class="footer-icon">
+                <i class="fab fa-linkedin-in"></i
+              ></a>
+            </li>
+            <li class="footer-link">
+              <a href="" class="footer-icon"><i class="fab fa-github"></i></a>
+            </li>
+            <li class="footer-link">
+              <a href="" class="footer-icon"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li class="footer-link">
+              <a href="" class="footer-icon">
+                <i class="fab fa-medium-m"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <!-- end of icon-links -->
+
+        <!-- useful links -->
+        <div class="display-block">
+          Useful Links
+          <ul class="footer-list">
+            <li>
+              <a class="footer-link" href="">Faq's </a>
+            </li>
+            <li>
+              <a class="footer-link" href="">T&C </a>
+            </li>
+            <li>
+              <a class="footer-link" href="">Terms of use</a>
+            </li>
+            <li>
+              <a class="footer-link" href="">Order tracking</a>
+            </li>
+            <li>
+              <a class="footer-link" href="">Shipping</a>
+            </li>
+
+            <li>
+              <a class="footer-link" href="">Returns</a>
+            </li>
+            <li>
+              <a class="footer-link" href="">Cancellation</a>
+            </li>
+            <li>
+              <a class="footer-link" href="">Feedback</a>
+            </li>
+          </ul>
+        </div>
+        <!-- end of useful links  -->
+      </div>
 
       <div class="copyright-text flex-row">
-        <p class="marg-un">In case of any concern,<a href="">Contact Us</a></p>
+        <p class="marg-un">
+          In case of any concern,<a href="" class="footer-link">Contact Us</a>
+        </p>
         <p class="marg-un">
           © 2022 HalloDecor by Surbhi Kukreti. All rights reserved.
         </p>
