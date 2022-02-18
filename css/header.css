@@ -20,10 +20,6 @@
   background-color: var(--primary-color-bg);
 }
 
-.nav-links {
-  gap: var(--spacing-xxl);
-}
-
 .nav-link {
   padding-right: 0.2rem;
   border-radius: 0.5rem;
