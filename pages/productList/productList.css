@@ -1,12 +1,15 @@
 .main-content {
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr 4fr;
+}
+
+.nav-head {
+  position: relative;
 }
 
 .card-ecom {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
   height: 25rem;
   min-height: 7rem;
@@ -19,7 +22,7 @@
 .card-ecom > img {
   margin-top: var(--spacing-2xs);
   width: 94%;
-  height: 70%;
+  height: 16rem;
 }
 
 .cart-btn {

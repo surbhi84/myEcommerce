@@ -3,10 +3,23 @@
 @import url(/css/footer.css);
 @import url(/css/variable.css);
 @import url(/css/util.css);
+/* @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css); */
 
 body {
   font-family: "Nunito", sans-serif;
   margin: unset;
+}
+
+.top-fit {
+  object-position: top;
+}
+
+.center-fit {
+  object-position: center;
+}
+
+.bottom-fit {
+  object-position: bottom;
 }
 
 /* card class to implement the hover functionality */

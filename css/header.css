@@ -104,14 +104,6 @@
   margin-left: -100%;
 }
 
-.top-fit {
-  object-position: top;
-}
-
-.bottom-fit {
-  object-position: bottom;
-}
-
 .active {
   background-color: var(--primary-color);
 }

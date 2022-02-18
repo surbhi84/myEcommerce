@@ -3,6 +3,7 @@
   flex-direction: column;
   gap: var(--spacing-md);
   padding: var(--spacing-sm);
+  background-color: var(--primary-color-bg);
 }
 
 .filter-head {
@@ -21,4 +22,8 @@
   padding-left: unset;
   margin: unset;
   justify-content: space-between;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  color: var(--primary-color);
 }
