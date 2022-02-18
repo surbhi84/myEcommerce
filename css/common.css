@@ -2,18 +2,11 @@
 @import url(/css/header.css);
 @import url(/css/footer.css);
 @import url(/css/variable.css);
+@import url(/css/util.css);
 
 body {
   font-family: "Nunito", sans-serif;
   margin: unset;
-}
-
-.cursor-pointer {
-  cursor: pointer;
-}
-
-.text-dec-none {
-  text-decoration: none;
 }
 
 /* card class to implement the hover functionality */

@@ -8,96 +8,174 @@
     <meta name="description" content="HalloCart product listing page" />
 
     <link rel="stylesheet" href="http://127.0.0.1:5501/halloUi-share.css" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://halloui.netlify.app/halloUi-share.css"
+    /> -->
+    <link rel="stylesheet" href="/css/common.css" />
+    <link rel="stylesheet" href="productList.css" />
+    <link rel="stylesheet" href="/pages/productList/filter.css" />
 
-    <link rel="stylesheet" href="/productList.css" />
     <title>Document</title>
   </head>
   <body>
-    <div class="flex-row-wrap gap-md pd-s flex-center">
-      <!-- 1st card -->
-      <div class="card">
-        <span class="card-badge">#1 Bestseller</span>
-        <img src="/media/images/mugs.webp" alt="mug set" class="img-size" />
-        <div class="pad-topleft">
-          <h4 class="marg-un">GOODHOMES</h4>
-          <span>4-Pcs Printed Bone China Cups Set</span>
+    <!-- main content start -->
+    <main class="main-content">
+      <!-- filter section -->
+      <div class="filter">
+        <!-- filter head -->
+        <div class="flex-row filter-head">
+          <h4 class="marg-un">Filters</h4>
+          <p class="marg-un">CLEAR</p>
         </div>
-        <div class="pad-topleft">
-          <strong> Rs. 749 </strong> <s>999</s> <span>25% OFF</span>
-        </div>
-        <div class="btns">
-          <button class="btn"><img src="/media/icons/redHeart.svg" /></button>
-          <button class="btn"><img src="/media/icons/bluecart.svg" /></button>
-        </div>
-      </div>
+        <!-- end of filter head -->
 
-      <!-- 2nd card -->
-      <div class="card">
-        <span class="card-badge">#1 Bestseller</span>
-        <img src="/media/images/mugs.webp" alt="mug set" class="img-size" />
-        <div class="pad-topleft">
-          <h4 class="marg-un">GOODHOMES</h4>
-          <span>4-Pcs Printed Bone China Cups Set</span>
+        <!-- price range bar -->
+        <div class=>
+          <h4>Price</h4>
+          <div class="price-range flex-col">
+            <input type="range" name="" id="" />
+            <ul class="price-values flex-row">
+              <li>0</li>
+              <li>1000</li>
+              <li>2000</li>
+            </ul>
+          </div>
         </div>
-        <div class="pad-topleft">
-          <strong> Rs. 749 </strong> <s>999</s> <span>25% OFF</span>
-        </div>
-        <div class="btns">
-          <button class="btn"><img src="/media/icons/redHeart.svg" /></button>
-          <button class="btn"><img src="/media/icons/bluecart.svg" /></button>
-        </div>
-      </div>
+          <!-- end of price range -->
 
-      <!-- 3rd cARD -->
-      <div class="card">
-        <span class="card-badge">#1 Bestseller</span>
-        <img src="/media/images/mugs.webp" alt="mug set" class="img-size" />
-        <div class="pad-topleft">
-          <h4 class="marg-un">GOODHOMES</h4>
-          <span>4-Pcs Printed Bone China Cups Set</span>
-        </div>
-        <div class="pad-topleft">
-          <strong> Rs. 749 </strong> <s>999</s> <span>25% OFF</span>
-        </div>
-        <div class="btns">
-          <button class="btn"><img src="/media/icons/redHeart.svg" /></button>
-          <button class="btn"><img src="/media/icons/bluecart.svg" /></button>
-        </div>
-      </div>
+          <!-- category selection using checkboxes -->
+          <div class="flex-col">
+            <h4>Category</h4>
+         <label>
+           <input type="radio" name="" id="">
+         </label>
+          </div>
+          <!-- end of category selection -->
 
-      <!-- 4rth card -->
-      <div class="card">
-        <span class="card-badge">#1 Bestseller</span>
-        <img src="/media/images/mugs.webp" alt="mug set" class="img-size" />
-        <div class="pad-topleft">
-          <h4 class="marg-un">GOODHOMES</h4>
-          <span>4-Pcs Printed Bone China Cups Set</span>
-        </div>
-        <div class="pad-topleft">
-          <strong> Rs. 749 </strong> <s>999</s> <span>25% OFF</span>
-        </div>
-        <div class="btns">
-          <button class="btn"><img src="/media/icons/redHeart.svg" /></button>
-          <button class="btn"><img src="/media/icons/bluecart.svg" /></button>
-        </div>
-      </div>
+          <!-- selection based on rating -->
+          <div class="flex-col gap-sm">
+            <h4>Rating</h4>
+          <label ><input type="radio" name="" id=""> 4 stars and above</label>
+          <label ><input type="radio" name="" id=""> 3 stars and above</label>
+          <label ><input type="radio" name="" id=""> 2 stars and above</label>
+          <label ><input type="radio" name="" id=""> 1 stars and above</label>
+        
 
-      <!-- 5th card -->
-      <div class="card">
-        <span class="card-badge">#1 Bestseller</span>
-        <img src="/media/images/mugs.webp" alt="mug set" class="img-size" />
-        <div class="pad-topleft">
-          <h4 class="marg-un">GOODHOMES</h4>
-          <span>4-Pcs Printed Bone China Cups Set</span>
-        </div>
-        <div class="pad-topleft">
-          <strong> Rs. 749 </strong> <s>999</s> <span>25% OFF</span>
-        </div>
-        <div class="btns">
-          <button class="btn"><img src="/media/icons/redHeart.svg" /></button>
-          <button class="btn"><img src="/media/icons/bluecart.svg" /></button>
+          </div>
+          <!-- end of rating -->
+
+          <!-- Sort by price -->
+          <div class="flex-col gap-sm">
+            <h4 class=>Sort by</h4>
+            <label>
+              <input type="radio" name="peas" />  Price-High to Low
+            </label>
+            <label>
+              <input type="radio" name="" id="" />  Price-Low to High
+            </label>
+          </div>
+
+          <!-- end of sort by price -->
         </div>
       </div>
-    </div>
+      <!-- end of filter section -->
+
+      <!-- product-list -->
+      <div class="flex-row-wrap gap-md pd-s flex-center">
+        <!-- 1st card -->
+        <div class="card-ecom">
+          <span class="card-badge bg-col-prim">#1 Bestseller</span>
+          <button class="like-btn">
+            <img src="/media/icons/redHeart.svg" />
+          </button>
+          <img
+            src="/media/images/stackedSoap.webp"
+            alt="handmade soap set"
+            class="responsive-img"
+          />
+          <div class="product-details">
+            <h4 class="marg-un">Vinaya Beauty</h4>
+            <p class="marg-un">Handmade soap set</p>
+            <strong> Rs. 749 </strong> <s>999</s> <span>25% OFF</span>
+          </div>
+          <button class="cart-btn">
+            Add to cart
+            <img src="/media/icons/bluecart.svg" />
+          </button>
+        </div>
+
+        <!-- 2nd card -->
+        <div class="card-ecom">
+          <!-- <span class="card-badge bg-col-prim">#1 Bestseller</span> -->
+          <button class="like-btn">
+            <img src="/media/icons/redHeart.svg" />
+          </button>
+          <img
+            src="/media/images/toy.webp"
+            alt="wooden toy"
+            class="responsive-img"
+          />
+          <div class="product-details">
+            <h4 class="marg-un">Nature jewels</h4>
+            <p class="marg-un">Wooden Hand toy</p>
+            <strong> Rs. 749 </strong> <s>999</s> <span>25% OFF</span>
+          </div>
+          <button class="cart-btn">
+            Add to cart
+            <img src="/media/icons/bluecart.svg" />
+          </button>
+        </div>
+
+        <!-- 3rd cARD -->
+        <div class="card-ecom">
+          <span class="card-badge bg-col-prim">Trending</span>
+          <button class="like-btn">
+            <img src="/media/icons/redHeart.svg" />
+          </button>
+          <img
+            src="/media/images/basket1.webp"
+            alt="handmade woven storage basket"
+            class="responsive-img"
+          />
+          <div class="product-details">
+            <h4 class="marg-un">Nature jewels</h4>
+            <p class="marg-un">storage basket</p>
+            <strong> Rs. 749 </strong> <s>999</s> <span>25% OFF</span>
+          </div>
+          <button class="cart-btn">
+            Add to cart
+            <img src="/media/icons/bluecart.svg" />
+          </button>
+        </div>
+
+        <!-- 4rth card -->
+        <div class="card-ecom">
+          <span class="card-badge bg-col-prim">#1 Bestseller</span>
+
+          <button class="like-btn">
+            <img src="/media/icons/redHeart.svg" />
+          </button>
+          <img
+            src="/media/images/plates.webp"
+            alt="handmade soap set"
+            class="responsive-img"
+          />
+          <div class="product-details">
+            <h4 class="marg-un">Vilas dining</h4>
+            <p class="marg-un">Printed designer kitchen plates</p>
+            <strong> Rs. 749 </strong> <s>999</s> <span>25% OFF</span>
+          </div>
+          <button class="cart-btn">
+            Add to cart
+            <img src="/media/icons/bluecart.svg" />
+          </button>
+        </div>
+
+        <!-- 5th card -->
+      </div>
+      <!-- end of product list -->
+    </main>
+    <!-- end of main content -->
   </body>
 </html>
