@@ -14,7 +14,7 @@
 
 .inner-category-card {
   cursor: pointer;
-  color: black;
+  color: var(--color-blk);
 }
 
 /* div that contains landscape image with overcard */
@@ -61,5 +61,5 @@
   position: absolute;
   cursor: pointer;
   text-decoration: none;
-  color: black;
+  color: var(--color-blk);
 }

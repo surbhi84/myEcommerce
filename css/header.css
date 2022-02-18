@@ -6,11 +6,10 @@
 
 .logo {
   text-decoration: none;
-  color: black;
+  color: var(--color-blk);
   font-size: var(--fs-m);
   font-family: "Dancing Script", cursive;
-  border: 4px var(--primary-color);
-  border-style: double;
+  border: 4px double var(--primary-color);
   background-color: var(--primary-color-bg);
 }
 
@@ -28,8 +27,7 @@
 .nav-link {
   padding-right: 0.2rem;
   border-radius: 0.5rem;
-  border-bottom: 1px solid transparent;
-  border-right: 1px solid transparent;
+  border: 1px solid transparent;
 }
 
 .nav-link:hover {
