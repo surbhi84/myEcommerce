@@ -7,22 +7,17 @@
     <meta name="author" content="Surbhi Kukreti" />
     <meta name="description" content="HalloCart product listing page" />
 
-    <link rel="stylesheet" href="http://127.0.0.1:5501/halloUi-share.css" />
-    <!-- <link
-      rel="stylesheet"
-      href="https://halloui.netlify.app/halloUi-share.css"
-    /> -->
+   
     <link rel="stylesheet" href="/css/common.css" />
     <link rel="stylesheet" href="productList.css" />
     <link rel="stylesheet" href="/pages/productList/filter.css" />
-  
 
-    <title>Document</title>
+    <title>HalloCart-products</title>
   </head>
   <body>
     <header class="home-head">
  <!-- start of nav-head -->
- <nav class="nav-head">
+ <nav class="nav-head pos-rel">
   <a class="logo" href="/index.html">
     <h2 class="mg-xs">Hallo!Decor</h2>
   </a>
@@ -49,7 +44,7 @@
       </a>
     </li>
     <li>
-      <a class="nav-link" href="#">
+      <a class="nav-link" href="/pages/wishlist/">
         <img
           src="/media/icons/heartFilled.svg"
           alt="heart icon"
@@ -59,7 +54,7 @@
       </a>
     </li>
     <li>
-      <a class="nav-link" href="#"
+      <a class="nav-link" href="/pages/cart/"
         ><img
           src="/media/icons/cart.svg"
           alt="cart icon"
@@ -74,7 +69,7 @@
 <!-- end of nav-head -->
 </header>
 
-
+<!-- showcase for quicklinks by categories -->
 <div class="parting flex-row">
 <a href="#" class="text-dec-none text-link ">Art & Decor</a>
 <a href="#" class="text-dec-none text-link">Lamps & lighting</a>
@@ -82,8 +77,8 @@
 <a href="#" class="text-dec-none text-link">Bath</a>
 <a href="#" class="text-dec-none text-link">Bed Linen</a>
 <a href="#" class="text-dec-none text-link">Furnishings</a>
-
 </div>
+<!-- end of showcase -->
 
     <!-- main content start -->
     <main class="main-content">
@@ -102,7 +97,7 @@
         <div class=>
           <h4>Price</h4>
           <div class="price-range flex-col">
-            <input  type="range" name="" id="" />
+            <input  type="range" />
             <ul class="price-values flex-row">
               <li>0</li>
               <li>1000</li>
@@ -116,13 +111,9 @@
           <div class="flex-col gap-sm">
             <h4>Category</h4>
          <label>
-           <input type="checkbox" name="" id="">  Bestsellers
-         </label>
-         <label>
-          <input type="checkbox" name="" id=""> Trending
-        </label>
-        <label>
-          <input type="checkbox" name="" id=""> Handcrafted
+          <input type="checkbox">  Bestsellers
+          <input type="checkbox" > Trending
+          <input type="checkbox" > Handcrafted
         </label>
           </div>
           <!-- end of category selection -->
@@ -130,10 +121,10 @@
           <!-- selection based on rating -->
           <div class="flex-col gap-sm">
             <h4>Rating</h4>
-          <label ><input type="radio" name="" id=""> 4 stars and above</label>
-          <label ><input type="radio" name="" id=""> 3 stars and above</label>
-          <label ><input type="radio" name="" id=""> 2 stars and above</label>
-          <label ><input type="radio" name="" id=""> 1 stars and above</label>
+          <label ><input type="radio" > 4 stars and above</label>
+          <label ><input type="radio" > 3 stars and above</label>
+          <label ><input type="radio" > 2 stars and above</label>
+          <label ><input type="radio" > 1 stars and above</label>
         
 
           </div>
@@ -143,10 +134,10 @@
           <div class="flex-col gap-sm">
             <h4 class=>Sort by</h4>
             <label>
-              <input type="radio" name="peas" />  Price-High to Low
+              <input type="radio" />  Price-High to Low
             </label>
             <label>
-              <input type="radio" name="" id="" />  Price-Low to High
+              <input type="radio"  />  Price-Low to High
             </label>
           </div>
 
@@ -161,7 +152,7 @@
         <div class="card-ecom">
           <span class="card-badge bg-col-prim">#1 Bestseller</span>
           <button class="like-btn">
-            <img src="/media/icons/redHeart.svg" />
+            <img src="/media/icons/redHeart.svg" alt="heart icon"/>
           </button>
           <img
             src="/media/images/stackedSoap.webp"
@@ -175,7 +166,7 @@
           </div>
           <button class="cart-btn">
             Add to cart
-            <img src="/media/icons/bluecart.svg" />
+            <img src="/media/icons/bluecart.svg" alt="cart icon" />
           </button>
         </div>
 
@@ -184,7 +175,7 @@
           <span class="card-badge bg-col-prim">#1 Bestseller</span>
 
           <button class="like-btn">
-            <img src="/media/icons/redHeart.svg" />
+            <img src="/media/icons/redHeart.svg" alt="heart icon" />
           </button>
           <img
             src="/media/images/plates.webp"
@@ -199,7 +190,7 @@
           </div>
           <button class="cart-btn">
             Add to cart
-            <img src="/media/icons/bluecart.svg" />
+            <img src="/media/icons/bluecart.svg" alt="cart icon"/>
           </button>
         </div>
        
@@ -208,7 +199,7 @@
         <div class="card-ecom">
           <span class="card-badge bg-col-prim">Trending</span>
           <button class="like-btn">
-            <img src="/media/icons/redHeart.svg" />
+            <img src="/media/icons/redHeart.svg" alt="heart icon"/>
           </button>
           <img
             src="/media/images/basket1.webp"
@@ -223,7 +214,7 @@
           </div>
           <button class="cart-btn">
             Add to cart
-            <img src="/media/icons/bluecart.svg" />
+            <img src="/media/icons/bluecart.svg" alt="cart icon"/>
           </button>
         </div>
 
@@ -231,7 +222,7 @@
         <div class="card-ecom">
           <span class="card-badge bg-col-prim">Trending</span>
           <button class="like-btn">
-            <img src="/media/icons/redHeart.svg" />
+            <img src="/media/icons/redHeart.svg" alt="heart icon" />
           </button>
           <img
             src="/media/images/whitebase.webp"
@@ -246,7 +237,7 @@
           </div>
           <button class="cart-btn">
             Add to cart
-            <img src="/media/icons/bluecart.svg" />
+            <img src="/media/icons/bluecart.svg" alt="cart icon" />
           </button>
         </div>
        
@@ -255,7 +246,7 @@
         <div class="card-ecom">
           <!-- <span class="card-badge bg-col-prim">#1 Bestseller</span> -->
           <button class="like-btn">
-            <img src="/media/icons/redHeart.svg" />
+            <img src="/media/icons/redHeart.svg" alt="heart icon"/>
           </button>
           <img
             src="/media/images/toy.webp"
@@ -270,7 +261,7 @@
           </div>
           <button class="cart-btn">
             Add to cart
-            <img src="/media/icons/bluecart.svg" />
+            <img src="/media/icons/bluecart.svg" alt="cart icon" />
           </button>
         </div>
 
@@ -278,7 +269,7 @@
         <div class="card-ecom">
           <!-- <span class="card-badge bg-col-prim">#1 Bestseller</span> -->
           <button class="like-btn">
-            <img src="/media/icons/redHeart.svg" />
+            <img src="/media/icons/redHeart.svg"alt="heart icon" />
           </button>
           <img
             src="/media/images/artanddecor.webp"
@@ -293,7 +284,7 @@
           </div>
           <button class="cart-btn">
             Add to cart
-            <img src="/media/icons/bluecart.svg" />
+            <img src="/media/icons/bluecart.svg" alt="cart icon"/>
           </button>
         </div>
       </div>

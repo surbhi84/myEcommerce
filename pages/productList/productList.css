@@ -1,9 +1,8 @@
-.nav-head {
+.pos-rel {
   position: relative;
 }
 
 .parting {
-  justify-content: space-around;
   justify-content: space-evenly;
   padding: var(--spacing-xl);
   background-color: var(--primary-color-bg);
