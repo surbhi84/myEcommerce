@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Gideon+Roman&family=Libre+Baskerville&family=Nunito:wght@200&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+.logo {
+  text-decoration: none;
+  color: var(--color-blk);
+  font-size: var(--fs-m);
+  font-family: "Dancing Script", cursive;
+  border: 4px double var(--primary-color);
+  background-color: var(--primary-color-bg);
+}
+
+.nav-head {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  background-color: var(--primary-color-bg);
+}
+
+.nav-link {
+  padding-right: 0.2rem;
+  border-radius: 0.5rem;
+  border: 1px solid transparent;
+}
+
+.nav-link:hover {
+  transform: scale(1.05);
+  border-radius: 0.5rem;
+  border-bottom: 1px solid var(--primary-color);
+  border-right: 1px solid;
+}
+
+/* css for carousel below */
+
+.carousel {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.slides {
+  width: 400%;
+  height: 100vh;
+  display: flex;
+}
+
+.slides input {
+  display: none;
+}
+
+.slide {
+  width: 33%;
+  transition: 2s;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.manual-navigation {
+  position: absolute;
+  width: 100%;
+  top: 95%;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.manual-btn {
+  border: 2px solid var(--primary-color);
+  padding: 0.2rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:hover {
+  background: var(--primary-color);
+}
+
+#radio1:checked ~ .first {
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+  margin-left: -33%;
+}
+
+#radio3:checked ~ .first {
+  margin-left: -66%;
+}
+
+#radio4:checked ~ .first {
+  margin-left: -100%;
+}
+
+.active {
+  background-color: var(--primary-color);
+}

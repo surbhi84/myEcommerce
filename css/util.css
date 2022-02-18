@@ -1,0 +1,15 @@
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.text-dec-none {
+  text-decoration: none;
+}
+
+.col-prim {
+  background-color: var(--primary-color);
+}
+
+.bg-col-prim {
+  background-color: var(--primary-color-bg);
+}
