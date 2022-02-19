@@ -7,7 +7,9 @@
     <meta name="author" content="Surbhi Kukreti" />
     <meta name="description" content="HalloDecor Sign up page" />
     <link rel="stylesheet" href="/css/common.css" />
-    <link rel="stylesheet" href="/pages/sign-in/signin.css" />
+    <link rel="stylesheet" href="/pages/login/signin.css" />
+    <script src="/pages/login/signup.js" defer></script>
+
     <title>HalloDecor-Sign up</title>
   </head>
   <body>
@@ -30,7 +32,7 @@
             </button>
           </li>
           <li>
-            <a class="nav-link" href="#"
+            <a class="nav-link" href="/pages/login/"
               ><img
                 src="/media/icons/profile.svg"
                 alt="Profile icon"
@@ -66,8 +68,32 @@
 
     <!-- start of main content ie signup card -->
     <main class="flex-center">
-      <div class="auth-card flex-col flex-center gap-md">
+      <!-- login card -->
+      <div class="login-card auth-card flex-col flex-center gap-md">
         <h3 class="auth-heading">Login</h3>
+        <label class="flex-col gap-sm full-width">
+          Enter your email id
+          <input type="text" class="input-line" />
+        </label>
+        <label class="flex-col gap-sm full-width">
+          Enter password
+          <input type="password" class="input-line" />
+        </label>
+        <div class="flex-row spc-btwn full-width">
+          <label><input type="checkbox" /> Remember me</label>
+          <a href="#" class="footer-link">Forgot your password?</a>
+        </div>
+        <button class="cart-btn full-width">Login</button>
+        <div>or</div>
+        <div class="sign-up text-link text-dec-none cursor-pointer">
+          Create New Account
+        </div>
+      </div>
+      <!-- end of login card -->
+
+      <!-- sign up card -->
+      <div class="signup-card auth-card flex-col flex-center gap-md">
+        <h3 class="auth-heading">Sign up</h3>
         <label class="flex-col gap-sm full-width">
           Enter your email id
           <input type="text" class="input-line" />
@@ -77,13 +103,17 @@
           <input type="password" class="input-line" />
         </label>
         <div class="flex-row spc-btwn full-width">
-          <label><input type="checkbox" /> Remember me</label>
-          <a href="#" class="footer-link">Forgot your password?</a>
+          <label
+            ><input type="checkbox" /> I accept all terms & conditions</label
+          >
         </div>
-        <button class="cart-btn full-width">Sign up</button>
+        <button class="cart-btn full-width">Create New Account</button>
         <div>or</div>
-        <a href="#" class="text-link text-dec-none">Create New Account</a>
+        <div class="login text-link text-dec-none cursor-pointer">
+          Already have an account
+        </div>
       </div>
+      <!-- end of sign up card -->
     </main>
     <!-- end of main content -->
 

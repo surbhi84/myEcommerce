@@ -1,5 +1,5 @@
 .auth-card {
-  width: 25rem;
+  width: 25 rem;
   padding: var(--spacing-xl);
   box-shadow: var(--shadow-blended-light);
   margin: var(--spacing-2xl);
