@@ -6,23 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Surbhi Kukreti" />
     <meta name="description" content="HalloCart product listing page" />
-
-    <link rel="stylesheet" href="http://127.0.0.1:5501/halloUi-share.css" />
-    <!-- <link
-      rel="stylesheet"
-      href="https://halloui.netlify.app/halloUi-share.css"
-    /> -->
     <link rel="stylesheet" href="/css/common.css" />
     <link rel="stylesheet" href="productList.css" />
     <link rel="stylesheet" href="/pages/productList/filter.css" />
-  
-
-    <title>Document</title>
+    <title>HalloCart-products</title>
   </head>
   <body>
-    <header class="home-head">
+ <header class="home-head">
  <!-- start of nav-head -->
- <nav class="nav-head">
+ <nav class="nav-head pos-rel">
   <a class="logo" href="/index.html">
     <h2 class="mg-xs">Hallo!Decor</h2>
   </a>
@@ -38,7 +30,6 @@
         />
       </button>
     </li>
-
     <li>
       <a class="nav-link" href="#"
         ><img
@@ -49,7 +40,7 @@
       </a>
     </li>
     <li>
-      <a class="nav-link" href="#">
+      <a class="nav-link" href="/pages/wishlist/">
         <img
           src="/media/icons/heartFilled.svg"
           alt="heart icon"
@@ -59,7 +50,7 @@
       </a>
     </li>
     <li>
-      <a class="nav-link" href="#"
+      <a class="nav-link" href="/pages/cart/"
         ><img
           src="/media/icons/cart.svg"
           alt="cart icon"
@@ -73,8 +64,7 @@
 </nav>
 <!-- end of nav-head -->
 </header>
-
-
+<!-- showcase for quicklinks by categories -->
 <div class="parting flex-row">
 <a href="#" class="text-dec-none text-link ">Art & Decor</a>
 <a href="#" class="text-dec-none text-link">Lamps & lighting</a>
@@ -82,300 +72,269 @@
 <a href="#" class="text-dec-none text-link">Bath</a>
 <a href="#" class="text-dec-none text-link">Bed Linen</a>
 <a href="#" class="text-dec-none text-link">Furnishings</a>
-
 </div>
-
-    <!-- main content start -->
-    <main class="main-content">
-      <!-- filter section -->
-      <div class="filter">
-        <!-- filter head -->
-        <div class="flex-row filter-head">
-          <h4 class="marg-un">Filters</h4>
-          <div><i class="fas fa-times"></i></div>
-
-          <!-- <p class="marg-un">clear</p> -->
-        </div>
-        <!-- end of filter head -->
-
-        <!-- price range bar -->
-        <div class=>
-          <h4>Price</h4>
-          <div class="price-range flex-col">
-            <input  type="range" name="" id="" />
-            <ul class="price-values flex-row">
-              <li>0</li>
-              <li>1000</li>
-              <li>2000</li>
-            </ul>
-          </div>
-        </div>
-          <!-- end of price range -->
-
-          <!-- category selection using checkboxes -->
-          <div class="flex-col gap-sm">
-            <h4>Category</h4>
-         <label>
-           <input type="checkbox" name="" id="">  Bestsellers
-         </label>
-         <label>
-          <input type="checkbox" name="" id=""> Trending
+<!-- end of showcase -->
+<!-- main content start -->
+<main class="main-content">
+  <!-- filter section -->
+  <div class="filter">
+    <!-- filter head -->
+    <div class="flex-row filter-head">
+      <h4 class="marg-un">Filters</h4>
+      <div><i class="fas fa-times"></i></div>
+      <!-- <p class="marg-un">clear</p> -->
+    </div>
+    <!-- end of filter head -->
+    <!-- price range bar -->
+    <div class=>
+      <h4>Price</h4>
+      <div class="price-range flex-col">
+        <input  type="range" />
+        <ul class="price-values flex-row">
+          <li>0</li>
+          <li>1000</li>
+          <li>2000</li>
+        </ul>
+      </div>
+    </div>
+      <!-- end of price range -->
+      <!-- category selection using checkboxes -->
+      <div class="flex-col gap-sm">
+        <h4>Category</h4>
+     <label>
+      <input type="checkbox">  Bestsellers
+      <input type="checkbox" > Trending
+      <input type="checkbox" > Handcrafted
+    </label>
+      </div>
+      <!-- end of category selection -->
+      <!-- selection based on rating -->
+      <div class="flex-col gap-sm">
+        <h4>Rating</h4>
+      <label ><input type="radio" > 4 stars and above</label>
+      <label ><input type="radio" > 3 stars and above</label>
+      <label ><input type="radio" > 2 stars and above</label>
+      <label ><input type="radio" > 1 stars and above</label>
+      </div>
+      <!-- end of rating -->
+      <!-- Sort by price -->
+      <div class="flex-col gap-sm">
+        <h4 class=>Sort by</h4>
+        <label>
+          <input type="radio" />  Price-High to Low
         </label>
         <label>
-          <input type="checkbox" name="" id=""> Handcrafted
+          <input type="radio"  />  Price-Low to High
         </label>
-          </div>
-          <!-- end of category selection -->
-
-          <!-- selection based on rating -->
-          <div class="flex-col gap-sm">
-            <h4>Rating</h4>
-          <label ><input type="radio" name="" id=""> 4 stars and above</label>
-          <label ><input type="radio" name="" id=""> 3 stars and above</label>
-          <label ><input type="radio" name="" id=""> 2 stars and above</label>
-          <label ><input type="radio" name="" id=""> 1 stars and above</label>
-        
-
-          </div>
-          <!-- end of rating -->
-
-          <!-- Sort by price -->
-          <div class="flex-col gap-sm">
-            <h4 class=>Sort by</h4>
-            <label>
-              <input type="radio" name="peas" />  Price-High to Low
-            </label>
-            <label>
-              <input type="radio" name="" id="" />  Price-Low to High
-            </label>
-          </div>
-
-          <!-- end of sort by price -->
-        </div>
       </div>
-      <!-- end of filter section -->
-
-      <!-- product-list -->
-      <div class="flex-row-wrap pd-m gap-xl flex-center">
-        <!-- 1st card -->
-        <div class="card-ecom">
-          <span class="card-badge bg-col-prim">#1 Bestseller</span>
-          <button class="like-btn">
-            <img src="/media/icons/redHeart.svg" />
-          </button>
-          <img
-            src="/media/images/stackedSoap.webp"
-            alt="handmade soap set"
-            class="responsive-img"
-          />
-          <div class="product-details">
-            <h4 class="marg-un">Vinaya Beauty</h4>
-            <p class="marg-un">Handmade soap set</p>
-            <strong> Rs. 749 </strong> <s>999</s> <span>25% OFF</span>
-          </div>
-          <button class="cart-btn">
-            Add to cart
-            <img src="/media/icons/bluecart.svg" />
-          </button>
-        </div>
-
-        <!-- 2nd card -->
-        <div class="card-ecom">
-          <span class="card-badge bg-col-prim">#1 Bestseller</span>
-
-          <button class="like-btn">
-            <img src="/media/icons/redHeart.svg" />
-          </button>
-          <img
-            src="/media/images/plates.webp"
-            alt="handmade soap set"
-            class="responsive-img"
-          />
-          <div class="product-details">
-            <h4 class="marg-un">Vilas dining</h4>
-            <p class="marg-un">Printed designer kitchen plates</p>
-            <strong> Rs. 1349 </strong> <s>2139</s> <span>35% OFF</span>
-
-          </div>
-          <button class="cart-btn">
-            Add to cart
-            <img src="/media/icons/bluecart.svg" />
-          </button>
-        </div>
-       
-
-        <!-- 3rd card -->
-        <div class="card-ecom">
-          <span class="card-badge bg-col-prim">Trending</span>
-          <button class="like-btn">
-            <img src="/media/icons/redHeart.svg" />
-          </button>
-          <img
-            src="/media/images/basket1.webp"
-            alt="handmade woven storage basket"
-            class="responsive-img"
-          />
-          <div class="product-details">
-            <h4 class="marg-un">Nature jewels</h4>
-            <p class="marg-un">Storage basket</p>
-            <strong> Rs. 1299 </strong> <s>1699</s> <span>23% OFF</span>
-
-          </div>
-          <button class="cart-btn">
-            Add to cart
-            <img src="/media/icons/bluecart.svg" />
-          </button>
-        </div>
-
-        <!-- 4rth card -->
-        <div class="card-ecom">
-          <span class="card-badge bg-col-prim">Trending</span>
-          <button class="like-btn">
-            <img src="/media/icons/redHeart.svg" />
-          </button>
-          <img
-            src="/media/images/whitebase.webp"
-            alt="wooden toy"
-            class="responsive-img"
-          />
-          <div class="product-details">
-            <h4 class="marg-un">Windbox Decor</h4>
-            <p class="marg-un">Set of wall portraits</p>
-            <strong> Rs. 749 </strong> <s>999</s> <span>25% OFF</span>
-
-          </div>
-          <button class="cart-btn">
-            Add to cart
-            <img src="/media/icons/bluecart.svg" />
-          </button>
-        </div>
-       
-
-        <!-- 5th card -->
-        <div class="card-ecom">
-          <!-- <span class="card-badge bg-col-prim">#1 Bestseller</span> -->
-          <button class="like-btn">
-            <img src="/media/icons/redHeart.svg" />
-          </button>
-          <img
-            src="/media/images/toy.webp"
-            alt="wooden toy"
-            class="responsive-img"
-          />
-          <div class="product-details">
-            <h4 class="marg-un">Nature jewels</h4>
-            <p class="marg-un">Wooden Handmade toy</p>
-            <strong> Rs. 895 </strong> <s>1489</s> <span>40% OFF</span>
-
-          </div>
-          <button class="cart-btn">
-            Add to cart
-            <img src="/media/icons/bluecart.svg" />
-          </button>
-        </div>
-
-        <!-- 6th card -->
-        <div class="card-ecom">
-          <!-- <span class="card-badge bg-col-prim">#1 Bestseller</span> -->
-          <button class="like-btn">
-            <img src="/media/icons/redHeart.svg" />
-          </button>
-          <img
-            src="/media/images/artanddecor.webp"
-            alt="wooden toy"
-            class="responsive-img"
-          />
-          <div class="product-details">
-            <h4 class="marg-un">Mansa creations</h4>
-            <p class="marg-un top-fit">Ceramic vase mustard colored</p>
-            <strong> Rs. 1456 </strong> <s>1799</s> <span>40% OFF</span>
-
-          </div>
-          <button class="cart-btn">
-            Add to cart
-            <img src="/media/icons/bluecart.svg" />
-          </button>
-        </div>
-      </div>
-      <!-- end of product list -->
-    </main>
-    <!-- end of main content -->
-
-
- <!-- end of main-content -->
- <footer>
-  <div class="footer-grid">
-    <!-- icon-links -->
-    <div class="display-block">
-      Keep in touch
-      <ul class="footer-list">
-        <li>
-          <a
-            href="https://www.linkedin.com/in/surbhi-kukreti-a91b0b163"
-            target="blank"
-            class="footer-icon"
-          >
-            <i class="fab fa-linkedin-in"></i
-          ></a>
-        </li>
-        <li>
-          <a
-            href="https://github.com/surbhi84"
-            target="blank"
-            class="footer-icon"
-            ><i class="fab fa-github"></i
-          ></a>
-        </li>
-        <li>
-          <a
-            href="https://twitter.com/Surbhikukreti89"
-            target="blank"
-            class="footer-icon"
-            ><i class="fab fa-twitter"></i
-          ></a>
-        </li>
-        <li>
-          <a
-            href="https://medium.com/@surbhikukreti"
-            target="blank"
-            class="footer-icon"
-          >
-            <i class="fab fa-medium-m"></i
-          ></a>
-        </li>
-      </ul>
+      <!-- end of sort by price -->
     </div>
-    <!-- end of icon-links -->
-
-    <!-- useful links -->
-    <div class="display-block">
-      Useful Links
-      <ul class="footer-list">
-        <li>
-          <a class="footer-link" href="#">Faq's </a>
-        </li>
-        <li>
-          <a class="footer-link" href="#">T&C </a>
-        </li>
-        <li>
-          <a class="footer-link" href="#">Terms of use</a>
-        </li>
-        <li>
-          <a class="footer-link" href="#">Order tracking</a>
-        </li>
-        <li>
-          <a class="footer-link" href="#">Shipping</a>
-        </li>
-
-        <li>
-          <a class="footer-link" href="#">Returns</a>
-        </li>
-        <li>
-          <a class="footer-link" href="#">Cancellation</a>
-        </li>
-        <li>
-          <a class="footer-link" href="#">Feedback</a>
-        </li>
+  </div>
+  <!-- end of filter section -->
+  <!-- product-list -->
+  <div class="flex-row-wrap pd-m gap-xl flex-center">
+    <!-- 1st card -->
+    <div class="card-ecom">
+      <span class="card-badge bg-col-prim">#1 Bestseller</span>
+      <button class="like-btn">
+        <img src="/media/icons/redHeart.svg" alt="heart icon"/>
+      </button>
+      <img
+        src="/media/images/stackedSoap.webp"
+        alt="handmade soap set"
+        class="responsive-img"
+      />
+      <div class="product-details">
+        <h4 class="marg-un">Vinaya Beauty</h4>
+        <p class="marg-un">Handmade soap set</p>
+        <strong> Rs. 749 </strong> <s>999</s> <span>25% OFF</span>
+      </div>
+      <button class="cart-btn">
+        Add to cart
+        <img src="/media/icons/bluecart.svg" alt="cart icon" />
+      </button>
+    </div>
+    <!-- 2nd card -->
+    <div class="card-ecom">
+      <span class="card-badge bg-col-prim">#1 Bestseller</span>
+      <button class="like-btn">
+        <img src="/media/icons/redHeart.svg" alt="heart icon" />
+      </button>
+      <img
+        src="/media/images/plates.webp"
+        alt="handmade soap set"
+        class="responsive-img"
+      />
+      <div class="product-details">
+        <h4 class="marg-un">Vilas dining</h4>
+        <p class="marg-un">Printed designer kitchen plates</p>
+        <strong> Rs. 1349 </strong> <s>2139</s> <span>35% OFF</span>
+      </div>
+      <button class="cart-btn">
+        Add to cart
+        <img src="/media/icons/bluecart.svg" alt="cart icon"/>
+      </button>
+    </div>
+    <!-- 3rd card -->
+    <div class="card-ecom">
+      <span class="card-badge bg-col-prim">Trending</span>
+      <button class="like-btn">
+        <img src="/media/icons/redHeart.svg" alt="heart icon"/>
+      </button>
+      <img
+        src="/media/images/basket1.webp"
+        alt="handmade woven storage basket"
+        class="responsive-img"
+      />
+      <div class="product-details">
+        <h4 class="marg-un">Nature jewels</h4>
+        <p class="marg-un">Storage basket</p>
+        <strong> Rs. 1299 </strong> <s>1699</s> <span>23% OFF</span>
+      </div>
+      <button class="cart-btn">
+        Add to cart
+        <img src="/media/icons/bluecart.svg" alt="cart icon"/>
+      </button>
+    </div>
+    <!-- 4rth card -->
+    <div class="card-ecom">
+      <span class="card-badge bg-col-prim">Trending</span>
+      <button class="like-btn">
+        <img src="/media/icons/redHeart.svg" alt="heart icon" />
+      </button>
+      <img
+        src="/media/images/whitebase.webp"
+        alt="wooden toy"
+        class="responsive-img"
+      />
+      <div class="product-details">
+        <h4 class="marg-un">Windbox Decor</h4>
+        <p class="marg-un">Set of wall portraits</p>
+        <strong> Rs. 749 </strong> <s>999</s> <span>25% OFF</span>
+      </div>
+      <button class="cart-btn">
+        Add to cart
+        <img src="/media/icons/bluecart.svg" alt="cart icon" />
+      </button>
+    </div>
+    <!-- 5th card -->
+    <div class="card-ecom">
+      <!-- <span class="card-badge bg-col-prim">#1 Bestseller</span> -->
+      <button class="like-btn">
+        <img src="/media/icons/redHeart.svg" alt="heart icon"/>
+      </button>
+      <img
+        src="/media/images/toy.webp"
+        alt="wooden toy"
+        class="responsive-img"
+      />
+      <div class="product-details">
+        <h4 class="marg-un">Nature jewels</h4>
+        <p class="marg-un">Wooden Handmade toy</p>
+        <strong> Rs. 895 </strong> <s>1489</s> <span>40% OFF</span>
+      </div>
+      <button class="cart-btn">
+        Add to cart
+        <img src="/media/icons/bluecart.svg" alt="cart icon" />
+      </button>
+    </div>
+    <!-- 6th card -->
+    <div class="card-ecom">
+      <!-- <span class="card-badge bg-col-prim">#1 Bestseller</span> -->
+      <button class="like-btn">
+        <img src="/media/icons/redHeart.svg"alt="heart icon" />
+      </button>
+      <img
+        src="/media/images/artanddecor.webp"
+        alt="wooden toy"
+        class="responsive-img"
+      />
+      <div class="product-details">
+        <h4 class="marg-un">Mansa creations</h4>
+        <p class="marg-un top-fit">Ceramic vase mustard colored</p>
+        <strong> Rs. 1456 </strong> <s>1799</s> <span>40% OFF</span>
+      </div>
+      <button class="cart-btn">
+        Add to cart
+        <img src="/media/icons/bluecart.svg" alt="cart icon"/>
+      </button>
+    </div>
+  </div>
+  <!-- end of product list -->
+</main>
+ <!-- end of main content -->
+ <!-- end of main-content -->
+<footer>
+ <div class="footer-grid">
+  <!-- icon-links -->
+  <div class="display-block">
+    Keep in touch
+    <ul class="footer-list">
+      <li>
+        <a
+          href="https://www.linkedin.com/in/surbhi-kukreti-a91b0b163"
+          target="blank"
+          class="footer-icon"
+        >
+          <i class="fab fa-linkedin-in"></i
+        ></a>
+      </li>
+      <li>
+        <a
+          href="https://github.com/surbhi84"
+          target="blank"
+          class="footer-icon"
+          ><i class="fab fa-github"></i
+        ></a>
+      </li>
+      <li>
+        <a
+          href="https://twitter.com/Surbhikukreti89"
+          target="blank"
+          class="footer-icon"
+          ><i class="fab fa-twitter"></i
+        ></a>
+      </li>
+      <li>
+        <a
+          href="https://medium.com/@surbhikukreti"
+          target="blank"
+          class="footer-icon"
+        >
+          <i class="fab fa-medium-m"></i
+        ></a>
+      </li>
+    </ul>
+  </div>
+  <!-- end of icon-links -->
+  <!-- useful links -->
+  <div class="display-block">
+    Useful Links
+    <ul class="footer-list">
+      <li>
+        <a class="footer-link" href="#">Faq's </a>
+      </li>
+      <li>
+        <a class="footer-link" href="#">T&C </a>
+      </li>
+      <li>
+        <a class="footer-link" href="#">Terms of use</a>
+      </li>
+      <li>
+        <a class="footer-link" href="#">Order tracking</a>
+      </li>
+      <li>
+        <a class="footer-link" href="#">Shipping</a>
+      </li>
+      <li>
+        <a class="footer-link" href="#">Returns</a>
+      </li>
+      <li>
+        <a class="footer-link" href="#">Cancellation</a>
+      </li>
+      <li>
+        <a class="footer-link" href="#">Feedback</a>
+      </li>
       </ul>
     </div>
     <!-- end of useful links  -->
@@ -391,6 +350,5 @@
   </div>
 </footer>
 <!-- start of footer -->
-
-  </body>
+</body>
 </html>
