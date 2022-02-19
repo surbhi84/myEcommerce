@@ -2,18 +2,29 @@
 @import url(/css/header.css);
 @import url(/css/footer.css);
 @import url(/css/variable.css);
+@import url(/css/util.css);
+
+@import url(/pages/productList/productList.css);
+@import url(https://halloui.netlify.app/halloUi-share.css);
+/* @import url(http://127.0.0.1:5501/halloUi-share.css); */
+/* @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css); */
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Gideon+Roman&family=Libre+Baskerville&family=Nunito:wght@200&display=swap");
 
 body {
   font-family: "Nunito", sans-serif;
   margin: unset;
 }
 
-.cursor-pointer {
-  cursor: pointer;
+.top-fit {
+  object-position: top;
 }
 
-.text-dec-none {
-  text-decoration: none;
+.center-fit {
+  object-position: center;
+}
+
+.bottom-fit {
+  object-position: bottom;
 }
 
 /* card class to implement the hover functionality */

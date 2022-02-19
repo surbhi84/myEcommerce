@@ -1,0 +1,82 @@
+.pos-rel {
+  position: relative;
+}
+
+.parting {
+  justify-content: space-evenly;
+  padding: var(--spacing-xl);
+  background-color: var(--primary-color-bg);
+}
+
+.text-link {
+  color: var(--primary-color);
+  border-bottom: 4px solid transparent;
+}
+
+.text-link:hover {
+  transform: scale(1.1);
+  border-bottom: 2px solid var(--primary-color);
+  transition: transform 0.1s ease;
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+.card-ecom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 25rem;
+  min-height: 7rem;
+  width: 18rem;
+  min-width: 10rem;
+  box-shadow: var(--shadow-subtle);
+  position: relative;
+}
+
+.card-ecom > img {
+  margin-top: var(--spacing-2xs);
+  width: 94%;
+  height: 16rem;
+}
+
+.cart-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+  width: 90%;
+  margin-top: var(--spacing-xs);
+  padding: var(--spacing-3xs);
+  border: 4px double transparent;
+  background-color: var(--primary-color-bg);
+  border-radius: 0.1rem;
+}
+
+.cart-btn:hover {
+  border: 4px double var(--primary-color);
+}
+
+.card-badge {
+  left: 5%;
+}
+
+.like-btn {
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: 58%;
+  right: 5%;
+}
+
+.like-btn:hover {
+  transform: scale(1.2);
+  opacity: 0.8;
+}
+
+.product-details {
+  width: 100%;
+  padding: var(--spacing-2xs) var(--spacing-xs) 0;
+}

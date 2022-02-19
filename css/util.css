@@ -1,0 +1,27 @@
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.text-dec-none {
+  text-decoration: none;
+}
+
+.col-prim {
+  background-color: var(--primary-color);
+}
+
+.bg-col-prim {
+  background-color: var(--primary-color-bg);
+}
+
+.self-cen {
+  justify-self: center;
+}
+
+.spc-btwn {
+  justify-content: space-between;
+}
+
+.full-width {
+  width: 100%;
+}
