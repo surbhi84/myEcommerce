@@ -1,8 +1,8 @@
 .auth-card {
   width: 25rem;
-  /* background-color: var(--primary-color-bg); */
   padding: var(--spacing-xl);
   box-shadow: var(--shadow-blended-light);
+  margin: var(--spacing-2xl);
 }
 
 .auth-heading {
