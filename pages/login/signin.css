@@ -16,3 +16,7 @@
 .input-line:focus {
   border-bottom: 0.15rem solid var(--primary-color);
 }
+
+.pwd-eye {
+  align-self: flex-end;
+}

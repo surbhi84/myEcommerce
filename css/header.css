@@ -16,7 +16,14 @@
   width: 100%;
   top: 0;
   background-color: var(--primary-color-bg);
+  scrollbar-width: none;
 }
+
+.nav-head::-webkit-scrollbar {
+  display: none;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Gideon+Roman&family=Nunito:wght@200&display=swap");
 
 .nav-link {
   padding-right: 0.2rem;
@@ -29,6 +36,13 @@
   border-radius: 0.5rem;
   border-bottom: 1px solid var(--primary-color);
   border-right: 1px solid;
+}
+
+.logout-btn {
+  background-color: var(--primary-color);
+  color: var(--color-blk);
+  border-radius: 0.2rem;
+  padding: var(--spacing-2xs);
 }
 
 /* css for carousel below */
@@ -51,7 +65,7 @@
 }
 
 .slide {
-  width: 33%;
+  width: 25%;
   transition: 2s;
 }
 
@@ -72,7 +86,7 @@
 
 .manual-btn {
   border: 2px solid var(--primary-color);
-  padding: 0.2rem;
+  padding: 0.3rem;
   border-radius: 50%;
   cursor: pointer;
   transition: 1s;
@@ -87,15 +101,15 @@
 }
 
 #radio2:checked ~ .first {
-  margin-left: -33%;
+  margin-left: -25%;
 }
 
 #radio3:checked ~ .first {
-  margin-left: -66%;
+  margin-left: -50%;
 }
 
 #radio4:checked ~ .first {
-  margin-left: -100%;
+  margin-left: -75%;
 }
 
 .active {
