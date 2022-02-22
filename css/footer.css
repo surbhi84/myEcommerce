@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Gideon+Roman&family=Nunito:wght@200&display=swap");
+
 .copyright-text {
   padding: 0 var(--spacing-xs);
   justify-content: space-between;
