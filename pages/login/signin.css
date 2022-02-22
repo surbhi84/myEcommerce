@@ -1,0 +1,18 @@
+.auth-card {
+  width: 25rem;
+  padding: var(--spacing-xl);
+  box-shadow: var(--shadow-blended-light);
+  margin: var(--spacing-2xl);
+}
+
+.auth-heading {
+  color: var(--primary-color);
+}
+
+.cart-btn {
+  width: 100%;
+}
+
+.input-line:focus {
+  border-bottom: 0.15rem solid var(--primary-color);
+}

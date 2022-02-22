@@ -4,10 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="HalloDecor  checkout page" />
+    <meta name="author" content="Surbhi Kukreti" />
+    <meta name="description" content="HalloDecor Sign up page" />
     <link rel="stylesheet" href="/css/common.css" />
-    <link rel="stylesheet" href="/pages/cart/cart.css" />
-    <title>HalloDecor-Cart</title>
+    <link rel="stylesheet" href="/pages/login/signin.css" />
+    <script src="/pages/login/signup.js" defer></script>
+
+    <title>HalloDecor-Sign up</title>
   </head>
   <body>
     <header class="home-head">
@@ -57,81 +60,72 @@
               Cart</a
             >
           </li>
-          <li>
-            <a href="/pages/login/" class="nav-link flex-col flex-center">
-              <div>Log</div>
-              <div>Out</div>
-            </a>
-          </li>
         </ul>
         <!-- end of nav-links -->
       </nav>
       <!-- end of nav-head -->
     </header>
-    <!-- showcase for quicklinks by categories -->
-    <div class="parting flex-row">
-      <a href="/pages/productList/" class="text-dec-none text-link med-text"
-        >My Cart</a
-      >
-    </div>
-    <!-- end of showcase -->
-    <!-- main content -->
-    <main class="main-cart flex-center">
-      <!-- hrz card for product display -->
-      <div class="card-ecom-hrz flex-row">
-        <img
-          src="/media/images/toy.webp"
-          alt="wooden toy"
-          class="responsive-img"
-        />
-        <!-- product details -->
-        <div class="product-details flex-col gap-sm">
-          <h4 class="marg-un">Nature jewels</h4>
-          <p class="marg-un">Wooden Handmade toy</p>
-          <strong> Rs. 895 </strong> <s>1489</s>
-          <div>40% OFF</div>
-          <div>
-            Quantity: <button class="short-btn">-</button> <span>1</span>
-            <button class="short-btn">+</button>
-          </div>
-          <button class="cart-btn full-width">Remove from cart</button>
-          <button class="cart-btn full-width">Move to wishlist</button>
-        </div>
-        <!-- end of product details -->
-      </div>
-      <!-- end of hrz card -->
-      <!-- amount details div -->
-      <div class="amt-detail pd-sm">
-        <h3>Amount Details</h3>
-        <hr class="break" />
 
-        <div>
-          <div class="flex-row spc-btwn">
-            <p>Amount(2 count)</p>
-            <p>Rs.1790</p>
-          </div>
-          <div class="flex-row spc-btwn">
-            <p>Discount</p>
-            <p>Rs.1188</p>
-          </div>
-          <div class="flex-row spc-btwn">
-            <p>Delivery charges</p>
-            <p>Rs.199</p>
-          </div>
-          <hr class="break" />
-          <div class="flex-row spc-btwn">
-            <strong>Total Amount</strong>
-            <strong>Rs.1989</strong>
-          </div>
-          <hr class="break" />
-          You will save Rs.1188 on this order
+    <!-- start of main content ie signup card -->
+    <main class="flex-center">
+      <!-- login card -->
+      <div class="login-card auth-card flex-col flex-center gap-md">
+        <h3 class="auth-heading">Login</h3>
+        <label class="flex-col gap-sm full-width">
+          Enter your email id
+          <input type="text" class="input-line" />
+        </label>
+        <label class="flex-col gap-sm full-width">
+          Enter password
+          <input type="password" class="input-line" />
+        </label>
+        <div class="flex-row spc-btwn full-width">
+          <label><input type="checkbox" /> Remember me</label>
+          <a href="#" class="footer-link">Forgot your password?</a>
         </div>
-        <button class="full-width cart-btn">Place Order</button>
+        <button class="cart-btn full-width">Login</button>
+        <div>or</div>
+        <div class="sign-up text-link text-dec-none cursor-pointer">
+          Create New Account
+        </div>
       </div>
-      <!-- end of amount details -->
+      <!-- end of login card -->
+
+      <!-- sign up card -->
+      <div class="signup-card auth-card flex-col flex-center gap-md">
+        <h3 class="auth-heading">Sign up</h3>
+        <label class="flex-col gap-sm full-width">
+          Name
+          <input type="text" class="input-line" />
+        </label>
+        <label class="flex-col gap-sm full-width">
+          Email id
+          <input type="text" class="input-line" />
+        </label>
+        <label class="flex-col gap-sm full-width">
+          Choose a password
+          <input type="password" class="input-line" />
+        </label>
+        <label class="flex-col gap-sm full-width">
+          Confirm password
+          <input type="password" class="input-line" />
+        </label>
+        <div class="flex-row spc-btwn full-width">
+          <label
+            ><input type="checkbox" /> I accept all terms & conditions</label
+          >
+        </div>
+        <button class="cart-btn full-width">Create New Account</button>
+        <div>or</div>
+        <div class="login text-link text-dec-none cursor-pointer">
+          Already have an account
+        </div>
+      </div>
+      <!-- end of sign up card -->
     </main>
-    <!-- end of main-content -->
+    <!-- end of main content -->
 
+    <!-- start of footer -->
     <footer>
       <div class="footer-grid">
         <!-- icon-links -->
@@ -144,7 +138,7 @@
                 target="blank"
                 class="footer-icon"
               >
-                <i class="fab fa-linkedin-in"></i
+                <i class="fab fa-linkedin-in"> </i
               ></a>
             </li>
             <li>
@@ -152,18 +146,16 @@
                 href="https://github.com/surbhi84"
                 target="blank"
                 class="footer-icon"
-              >
-                <i class="fab fa-github"></i>
-              </a>
+                ><i class="fab fa-github"></i
+              ></a>
             </li>
             <li>
               <a
                 href="https://twitter.com/Surbhikukreti89"
                 target="blank"
                 class="footer-icon"
-              >
-                <i class="fab fa-twitter"></i>
-              </a>
+                ><i class="fab fa-twitter"></i
+              ></a>
             </li>
             <li>
               <a
@@ -171,13 +163,12 @@
                 target="blank"
                 class="footer-icon"
               >
-                <i class="fab fa-medium-m"></i>
-              </a>
+                <i class="fab fa-medium-m"></i
+              ></a>
             </li>
           </ul>
         </div>
         <!-- end of icon-links -->
-
         <!-- useful links -->
         <div class="display-block">
           Useful Links
@@ -197,7 +188,6 @@
             <li>
               <a class="footer-link" href="#">Shipping</a>
             </li>
-
             <li>
               <a class="footer-link" href="#">Returns</a>
             </li>
@@ -214,13 +204,13 @@
 
       <div class="copyright-text flex-row">
         <p class="marg-un">
-          In case of any concern,<a href="" class="footer-link">Contact Us</a>
+          In case of any concern,<a href="#" class="footer-link">Contact Us</a>
         </p>
         <p class="marg-un">
           © 2022 HalloDecor by Surbhi Kukreti. All rights reserved.
         </p>
       </div>
     </footer>
-    <!-- start of footer -->
+    <!-- end of footer -->
   </body>
 </html>
