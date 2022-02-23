@@ -11,18 +11,16 @@
   align-items: center;
 }
 
-.price-range {
-  justify-content: center;
-  width: 80%;
-}
-
-.price-values {
-  list-style: none;
-  padding-left: unset;
-  margin: unset;
-  justify-content: space-between;
+.display-wrap {
+  width: 12rem;
 }
 
 input[type="range"]::-webkit-slider-runnable-track {
   color: var(--primary-color);
+}
+
+@media screen and (max-width: 480px) {
+  .filter {
+    display: none;
+  }
 }

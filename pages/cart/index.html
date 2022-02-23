@@ -7,6 +7,7 @@
     <meta name="description" content="HalloDecor  checkout page" />
     <link rel="stylesheet" href="/css/common.css" />
     <link rel="stylesheet" href="/pages/cart/cart.css" />
+    <script src="/js/hamburg.js" defer></script>
     <title>HalloDecor-Cart</title>
   </head>
   <body>
@@ -16,6 +17,9 @@
         <a class="logo" href="/index.html">
           <h2 class="mg-xs">Hallo!Decor</h2>
         </a>
+        <div class="menu-btn mg-xs hamburger-icon mg-left-auto">
+          <i class="fas fa-bars"></i>
+        </div>
         <!-- start of nav-links -->
         <ul class="nav-links">
           <li class="search search-box">
@@ -58,9 +62,11 @@
             >
           </li>
           <li>
-            <a href="/pages/login/" class="nav-link flex-col flex-center">
-              <div>Log</div>
-              <div>Out</div>
+            <a
+              href="/pages/login/"
+              class="logout-btn text-dec-none flex-col flex-center"
+            >
+              Log out
             </a>
           </li>
         </ul>
@@ -138,7 +144,7 @@
         <div class="display-block">
           Keep in touch
           <ul class="footer-list">
-            <li>
+            <li class="footer-icon">
               <a
                 href="https://www.linkedin.com/in/surbhi-kukreti-a91b0b163"
                 target="blank"
@@ -147,7 +153,7 @@
                 <i class="fab fa-linkedin-in"></i
               ></a>
             </li>
-            <li>
+            <li class="footer-icon">
               <a
                 href="https://github.com/surbhi84"
                 target="blank"
@@ -156,7 +162,7 @@
                 <i class="fab fa-github"></i>
               </a>
             </li>
-            <li>
+            <li class="footer-icon">
               <a
                 href="https://twitter.com/Surbhikukreti89"
                 target="blank"
@@ -165,7 +171,7 @@
                 <i class="fab fa-twitter"></i>
               </a>
             </li>
-            <li>
+            <li class="footer-icon">
               <a
                 href="https://medium.com/@surbhikukreti"
                 target="blank"
@@ -221,6 +227,6 @@
         </p>
       </div>
     </footer>
-    <!-- start of footer -->
+    <!-- end of footer -->
   </body>
 </html>

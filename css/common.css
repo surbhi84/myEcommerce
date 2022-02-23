@@ -11,6 +11,13 @@
 body {
   font-family: "Nunito", sans-serif;
   margin: unset;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  margin-bottom: auto;
 }
 
 .top-fit {
@@ -31,10 +38,16 @@ body {
   transition: transform 0.5s ease-in-out;
 }
 
-/* media queries for middle part of home page */
-@media (max-width: 768px) {
+.menu-btn {
+  display: none;
+}
+
+/* media queries for header and home page */
+@media screen and (max-width: 480px) {
   body {
     font-size: small;
+    display: flex;
+    flex-direction: column;
   }
 
   .logo {
@@ -44,6 +57,10 @@ body {
   .carousel {
     height: 40vh;
     width: 100%;
+  }
+
+  .slides {
+    height: 40vh;
   }
 
   .landscape-overcard {
@@ -62,6 +79,23 @@ body {
     justify-self: center;
     position: unset;
     align-self: center;
+  }
+
+  .menu-btn {
+    display: inline;
+  }
+  .nav-head {
+    overflow: visible;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    flex-direction: column;
+    border-radius: 0.2rem;
+    background-color: var(--primary-color);
+    padding: var(--spacing-sm);
   }
 }
 

@@ -9,6 +9,7 @@
   display: grid;
   grid-template-columns: 1fr 5fr;
   padding-top: var(--spacing-md);
+  margin-top: auto;
 }
 
 .footer-list {
@@ -23,11 +24,36 @@
   color: var(--primary-color);
 }
 
+.footer-icon:hover {
+  transform: scale(1.2);
+}
+
 .footer-link {
   color: var(--primary-color);
   text-decoration: none;
+  border-bottom: 2px solid transparent;
 }
 
 .footer-link:hover {
   border-bottom: 2px solid var(--primary-color);
+}
+
+@media screen and (max-width: 480px) {
+  .footer-grid {
+    display: block;
+    margin-top: auto;
+  }
+  .footer-grid > .display-block > .footer-list {
+    flex-wrap: wrap;
+  }
+
+  .footer-grid > .display-block {
+    padding: var(--spacing-3xs) var(--spacing-xs);
+  }
+  .copyright-text {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-3xs);
+    padding: var(--spacing-3xs);
+  }
 }
