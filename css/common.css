@@ -20,6 +20,10 @@ main {
   margin-bottom: auto;
 }
 
+.mg-btm {
+  margin-bottom: auto;
+}
+
 .top-fit {
   object-position: top;
 }
@@ -90,12 +94,17 @@ main {
 
   .nav-links {
     position: absolute;
+    z-index: 1;
     top: 0%;
     left: 0%;
     flex-direction: column;
     border-radius: 0.2rem;
     background-color: var(--primary-color);
     padding: var(--spacing-sm);
+  }
+
+  main {
+    margin-bottom: auto;
   }
 }
 
