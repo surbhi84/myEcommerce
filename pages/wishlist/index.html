@@ -7,6 +7,8 @@
     <meta name="author" content="Surbhi Kukreti" />
     <meta name="description" content="HalloDecor product Wishlist page" />
     <link rel="stylesheet" href="/css/common.css" />
+    <script src="/js/hamburg.js" defer></script>
+
     <title>HalloDecor-Wishlist</title>
   </head>
   <body>
@@ -16,6 +18,9 @@
         <a class="logo" href="/index.html">
           <h2 class="mg-xs">Hallo!Decor</h2>
         </a>
+        <div class="menu-btn mg-xs hamburger-icon mg-left-auto">
+          <i class="fas fa-bars"></i>
+        </div>
         <!-- start of nav-links -->
         <ul class="nav-links">
           <li class="search search-box">
@@ -58,9 +63,11 @@
             >
           </li>
           <li>
-            <a href="/pages/login/" class="nav-link flex-col flex-center">
-              <div>Log</div>
-              <div>Out</div>
+            <a
+              href="/pages/login/"
+              class="logout-btn text-dec-none flex-col flex-center"
+            >
+              Log out
             </a>
           </li>
         </ul>
@@ -71,45 +78,41 @@
 
     <!-- showcase for heading -->
     <div class="parting flex-row">
-      <a href="#" class="text-dec-none text-link med-text">My Wishlist</a>
+      <h2 class="text-link">My Wishlist</h2>
     </div>
     <!-- end of showcase -->
 
     <!-- start of main content -->
     <main class="flex-center gap-xl mg-m">
       <!-- card-1 -->
-      <div class="card-ecom">
-        <button class="like-btn">
-          <img src="/media/icons/redHeart.svg" alt="heart icon" />
-        </button>
+      <div class="card-ecom wishlist-card">
         <img
           src="/media/images/stackedSoap.webp"
           alt="handmade soap set"
           class="responsive-img"
         />
-        <div class="product-details flex-center flex-col gap-sm">
+        <div class="product-details flex-col flex-center">
           <h4 class="marg-un">Vinaya Beauty</h4>
           <p class="marg-un">Handmade soap set</p>
-          <div><strong> ₹ 749 </strong> <s>₹999</s></div>
+          <div class="wish-price"><strong> ₹ 749 </strong> <s>₹999</s></div>
         </div>
         <button class="cart-btn gap-sm">Move to cart</button>
+        <button class="cart-btn gap-sm">Remove from Wishlist</button>
       </div>
       <!-- card 2 -->
-      <div class="card-ecom">
-        <button class="like-btn">
-          <img src="/media/icons/redHeart.svg" alt="heart icon" />
-        </button>
+      <div class="card-ecom wishlist-card">
         <img
           src="/media/images/basket1.webp"
           alt="handmade woven storage basket"
           class="responsive-img"
         />
-        <div class="product-details flex-center flex-col gap-sm">
+        <div class="product-details flex-center flex-col">
           <h4 class="marg-un">Nature jewels</h4>
           <p class="marg-un">Storage basket</p>
-          <div><strong> ₹ 1299 </strong> <s>1699</s></div>
+          <div class="wish-price"><strong> ₹ 749 </strong> <s>₹999</s></div>
         </div>
         <button class="cart-btn gap-sm">Move to cart</button>
+        <button class="cart-btn gap-sm">Remove from Wishlist</button>
       </div>
     </main>
     <!-- end of main content -->
@@ -121,7 +124,7 @@
         <div class="display-block">
           Keep in touch
           <ul class="footer-list">
-            <li>
+            <li class="footer-icon">
               <a
                 href="https://www.linkedin.com/in/surbhi-kukreti-a91b0b163"
                 target="blank"
@@ -130,7 +133,7 @@
                 <i class="fab fa-linkedin-in"></i
               ></a>
             </li>
-            <li>
+            <li class="footer-icon">
               <a
                 href="https://github.com/surbhi84"
                 target="blank"
@@ -138,7 +141,7 @@
                 ><i class="fab fa-github"></i
               ></a>
             </li>
-            <li>
+            <li class="footer-icon">
               <a
                 href="https://twitter.com/Surbhikukreti89"
                 target="blank"
@@ -146,7 +149,7 @@
                 ><i class="fab fa-twitter"></i
               ></a>
             </li>
-            <li>
+            <li class="footer-icon">
               <a
                 href="https://medium.com/@surbhikukreti"
                 target="blank"

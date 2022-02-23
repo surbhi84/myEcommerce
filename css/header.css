@@ -28,20 +28,22 @@
 .nav-link {
   padding-right: 0.2rem;
   border-radius: 0.5rem;
-  border: 1px solid transparent;
+  border: 2px solid transparent;
 }
 
-.nav-link:hover {
+.nav-link:hover,
+.logout-btn:hover {
   transform: scale(1.05);
-  border-radius: 0.5rem;
-  border-bottom: 1px solid var(--primary-color);
-  border-right: 1px solid;
+  border-radius: 0.3rem;
+  border-bottom: 2px solid var(--primary-color);
+  border-right: 2px solid;
 }
 
 .logout-btn {
-  background-color: var(--primary-color);
+  background-color: var(--primary-color-bg);
   color: var(--color-blk);
   border-radius: 0.2rem;
+  border: 2px solid transparent;
   padding: var(--spacing-2xs);
 }
 

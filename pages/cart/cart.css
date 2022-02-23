@@ -12,6 +12,7 @@
 
 .main-cart {
   margin: var(--spacing-xl);
+  margin-bottom: auto;
 }
 
 .short-btn {
@@ -23,7 +24,6 @@
 
 .amt-detail {
   padding: var(--spacing-xs);
-  /* border: 2px solid var(--primary-color-bg); */
   width: 22rem;
 }
 
@@ -33,4 +33,20 @@
 
 .break {
   color: var(--primary-color);
+}
+
+@media screen and (max-width: 480px) {
+  .main-cart {
+    display: flex;
+    flex-direction: column;
+  }
+  .card-ecom-hrz {
+    width: 90vw;
+    padding: var(--spacing-xs);
+  }
+
+  .card-ecom-hrz > img {
+    width: 10rem;
+    height: 15rem;
+  }
 }
